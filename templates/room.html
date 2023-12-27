@@ -20,6 +20,7 @@
   var socketio = io();
   const messages = document.getElementById("messages");
 
+  // component to render messages
   const createMessage = (name, msg) => {
     const content = `
     <div class="text">
@@ -34,16 +35,19 @@
     messages.innerHTML += content;
   };
 
+  // event to list all messages
   socketio.on("message", (data) => {
     createMessage(data.name, data.message);
   });
 
+  // function to send messages
   const sendMessage = () => {
     const message = document.getElementById("message");
     if (message.value == "") return;
     socketio.emit("message", { data: message.value });
     message.value = "";
   };
+
 </script>
 {% for msg in messages %}
 <script type="text/javascript">
