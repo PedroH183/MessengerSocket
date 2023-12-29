@@ -20,5 +20,5 @@ Developmented with Flask and Flask-SocketIO, to render front-end i using jinja (
 
 
 ## Thanks 
-<a href="https://www.youtube.com/@TechWithTim">@TechWithTim</a> he recorded videos about how work a chat socket.</br>
+<a href="https://www.youtube.com/@TechWithTim">@TechWithTim</a> for recorded videos about how work a chat socket.</br>
 <a href="https://flask-socketio.readthedocs.io/en/latest/">All Contributions</a> from FlaskSocketIO project.
