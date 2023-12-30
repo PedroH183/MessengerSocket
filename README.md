@@ -2,6 +2,16 @@
 A chat socket created with rooms, you can create isolated temporary rooms ( and history ).</br>
 Developmented with Flask and Flask-SocketIO, to render front-end i using jinja ( backend render ).
 
+### Running the project 
+Go to root of project and create your virtual-env </br>
+
+- install dependences </br>
+`cat -r requirements | xargs poetry install` using pip or `pip3 -r requirements.txt` using poetry 
+
+- run the program </br>
+    `python3 main.py` </br>
+  <b>NOTE:</b> that i'm not use flask-script or any lib to manager my socketio server only using socketio.run() creates a basic server to development.
+
 #### Structure of Project
 
     ├── LICENSE 
