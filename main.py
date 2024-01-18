@@ -35,10 +35,10 @@ def home():
 
         if not name:
             return render_template("home.html", error="Please enter a name.", code=code, name=name)
-        
+
         if join and not code:
             return render_template("home.html", error="Please enter a room code.", code=code, name=name)
-        
+
         # check if exist a room if not create 
         room = code
         if create != False:
@@ -46,7 +46,7 @@ def home():
             room = generate_unique_code(4)
             # save this in a db
             rooms[room] = {"members" : 0, "messages": []}
-        
+
         elif code not in rooms:
             return render_template("home.html")
 
@@ -58,7 +58,7 @@ def home():
 
 @app.route("/room")
 def room():
-    
+
     room = session.get("room", None)
 
     if room is None or room not in rooms:
