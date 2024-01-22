@@ -1,6 +1,6 @@
 FROM python:3.12-alpine
 
-WORKDIR /mensseger
+WORKDIR /messenger
 
 COPY pyproject.toml .
 COPY poetry.lock .
