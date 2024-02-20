@@ -26,9 +26,3 @@ Go to root of project and create your virtual-env </br>
         ├── base.html
         ├── home.html
         └── room.html
-
-
-
-## Thanks 
-<a href="https://www.youtube.com/@TechWithTim">@TechWithTim</a> for recorded videos about how work a chat socket.</br>
-<a href="https://flask-socketio.readthedocs.io/en/latest/">All Contributions</a> from FlaskSocketIO project.
